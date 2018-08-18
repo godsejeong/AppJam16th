@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/itemProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemNickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="닉네임"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/itemRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="랭크"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/itemimg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--/>-->
+    <TextView
+        android:id="@+id/itemcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="안녕안녕앙sadfaksdfhkaljsdhfkjasdfhjkasdhfkjahdfkjasdhfkjashdfkjashdfkjalshdflkjasdlhfjlasdfhkjlasdhfklasdhfkalsdfhkajsdfhl"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Itemlike"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/love_icon"/>
+
+        <TextView
+            android:id="@+id/itemliketext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="557"/>
+
+        <ImageView
+            android:id="@+id/itemChaticon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/comment"/>
+
+        <TextView
+            android:id="@+id/itmeComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="116"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/darker_gray"
+        />
+
+</LinearLayout>

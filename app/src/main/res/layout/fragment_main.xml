@@ -5,13 +5,50 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <LinearLayout
+        android:id="@+id/fragmentLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="top|right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mainoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인기순"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="#cb3bcb"/>
+
+        <TextView
+            android:id="@+id/maintwoText"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최신순"
+            android:textSize="13sp"
+            android:textColor="#cb3bcb"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="25dp"
+        android:id="@+id/mainRecylcer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/mainFab"
         android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:backgroundTint="@drawable/maincolor"
-
+        app:backgroundTint="#cb3bcb"
+        android:src="@drawable/fab_icon"
         android:layout_gravity="bottom|right"/>
 
 </android.support.design.widget.CoordinatorLayout>

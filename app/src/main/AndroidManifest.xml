@@ -6,11 +6,10 @@
     <!-- camera -->
 
     <uses-feature android:name="android.hardware.CAMERA"/>
+
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
-
 
     <application
         android:allowBackup="true"
@@ -19,18 +18,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity"
+        <activity
+            android:name=".activity.MainActivity"
             android:theme="@style/NoActionBar">
         </activity>
-        <activity android:name=".activity.SplashActivity"
+        <activity
+            android:name=".activity.SplashActivity"
             android:theme="@style/NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-
         </activity>
 
         <provider
@@ -43,16 +42,26 @@
                 android:resource="@xml/provider_paths"/>
         </provider>
 
-        <activity android:name=".activity.LoginActivity"
+        <activity
+            android:name=".activity.LoginActivity"
             android:theme="@style/NoActionBar">
         </activity>
-        <activity android:name=".activity.SignInActivity"
-                  android:theme="@style/NoActionBar">
+        <activity
+            android:name=".activity.SignInActivity"
+            android:theme="@style/NoActionBar">
         </activity>
-
-        <activity android:name=".activity.CameraDialogActivity"
-                  android:theme="@android:style/Theme.Dialog"
-            />
+        <activity
+            android:name=".activity.CameraDialogActivity"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".activity.AddPostActivity"
+            android:theme="@style/NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.CommentActivity"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
     </application>
 
 </manifest>

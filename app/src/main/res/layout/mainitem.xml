@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
-</android.support.constraint.ConstraintLayout>
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/commentProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+<LinearLayout
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/cemmteritemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/commentRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="랭크"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:id="@+id/commentcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내용"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
