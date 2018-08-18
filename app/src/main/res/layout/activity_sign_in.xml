@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".activity.SignInActivity">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/signinProfile"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/profileimg"
+        app:civ_border_color="#00ff0000"/>
+
+    <EditText
+        android:id="@+id/signinName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signinProfile"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn_bg"
+        android:hint="Username"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:theme="@style/textStyle"/>
+
+    <EditText
+        android:id="@+id/signinId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signinName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn_bg"
+        android:hint="ID"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:theme="@style/textStyle"/>
+
+
+    <EditText
+        android:id="@+id/signinPasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signinId"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn_bg"
+        android:hint="Password"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:theme="@style/textStyle"/>
+
+    <LinearLayout
+        android:id="@+id/signinDateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signinPasswd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center|left"
+        android:orientation="vertical"
+        android:paddingLeft="82dp">
+
+        <TextView
+            android:id="@+id/signdateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:letterSpacing="0.2"
+            android:text="헤어진 날짜"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"/>
+
+        <LinearLayout
+            android:id="@+id/signinDateSelectLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signinDateMonth"
+                android:layout_width="114dp"
+                android:layout_height="40dp"
+                android:background="@drawable/login_btn_bg"
+                android:gravity="center|right"
+                android:paddingRight="10dp"
+                android:text="월"
+                android:textColor="@android:color/white"/>
+
+
+            <TextView
+                android:id="@+id/signinDateDay"
+                android:layout_width="114dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/login_btn_bg"
+                android:gravity="center|right"
+                android:paddingRight="10dp"
+                android:text="일"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signinBtn"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/signinDateLayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/login_loginsuccess_btn"
+        android:text="SIGN IN"
+        android:textColor="#cd50d3"/>
+
+
+</RelativeLayout>
